@@ -176,7 +176,7 @@ function retry(func, attempts) {
 function logger(func, logFunc) {
   return function finish(...args) {
     const arg = args
-      .map(function (item) {
+      .map(function hi(item) {
         return JSON.stringify(item);
       })
       .join(',');
